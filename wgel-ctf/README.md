@@ -21,3 +21,21 @@ Although nothing useful appeared at first glance, checking the page source revea
 ```Jessie```
 
 <img src="assets/jessie-source.png" width="700">
+
+# Directory Brute Forcing
+
+Using Gobuster to enumerate directories, a new endpoint was discovered:
+
+```/sitemap```
+
+<img src="assets/first-recon.png" width="700">
+
+This appeared to be the actual website. Running Gobuster again on this directory led to a critical finding:
+
+<img src="assets/second-recon.png" width="700">
+
+```/sitemap/.ssh/id_rsa```
+
+This file contained a private SSH key.
+
+<img src="assets/rsa-privatekey.png" width="700">
