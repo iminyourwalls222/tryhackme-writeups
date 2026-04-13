@@ -1,3 +1,5 @@
+<img src="assets/wgel-logo.png" width="700">
+
 # Wgel CTF - Write-up
 
 This is an easy Linux machine. The goal is to obtain both the user and root flags.
