@@ -41,3 +41,18 @@ This appeared to be the actual website. Running Gobuster again on this directory
 This file contained a private SSH key.
 
 <img src="assets/rsa-privatekey.png" width="700">
+
+# Gaining Access (SSH)
+
+The key was saved locally and its permissions were adjusted:
+
+```chmod 600 id_rsa```
+
+This is required because SSH refuses to use keys that are too permissive.
+
+Using the key, it was possible to log into the system as the user:
+
+```ssh -i id_rsa jessie@TARGET-IP```
+
+<img src="assets/ssh-access.png" width="700">
+
