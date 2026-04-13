@@ -14,10 +14,10 @@ The scan revealed that an HTTP service was running, so the next step was to enum
 
 Accessing the IP in the browser showed the default Apache2 Ubuntu page:
 
-![](assets/default-page.png)
+<img src="assets/default-page.png" width="600">
 
 Although nothing useful appeared at first glance, checking the page source revealed a potential username:
 
 ```Jessie```
 
-![](assets/jessie-source.png)
+<img src="assets/jessie-source.png" width="600">
