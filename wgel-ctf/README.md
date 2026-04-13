@@ -4,7 +4,7 @@
 
 This is an easy Linux machine. The goal is to obtain both the user and root flags.
 
-# Initial Recon
+## Initial Recon
 
 After starting the machine and obtaining its IP address, the first step was to perform a port scan using Nmap:
 
@@ -12,7 +12,7 @@ After starting the machine and obtaining its IP address, the first step was to p
 
 The scan revealed that an HTTP service was running, so the next step was to enumerate the web server.
 
-# Web Enumeration
+## Web Enumeration
 
 Accessing the IP in the browser showed the default Apache2 Ubuntu page:
 
@@ -24,7 +24,7 @@ Although nothing useful appeared at first glance, checking the page source revea
 
 <img src="assets/jessie-source.png" width="700">
 
-# Directory Brute Forcing
+## Directory Brute Forcing
 
 Using Gobuster to enumerate directories, a new endpoint was discovered:
 
@@ -42,7 +42,7 @@ This file contained a private SSH key.
 
 <img src="assets/rsa-privatekey.png" width="700">
 
-# Gaining Access (SSH)
+## Gaining Access (SSH)
 
 The key was saved locally and its permissions were adjusted:
 
@@ -56,13 +56,13 @@ Using the key, it was possible to log into the system as the user:
 
 <img src="assets/ssh-access.png" width="700">
 
-# User Flag
+## User Flag
 
 After gaining access, the user flag was found in the Documents directory:
 
 <img src="assets/user-flag.png" width="700">
 
-# Privilege Escalation
+## Privilege Escalation
 
 To escalate privileges, I checked the sudo permissions:
 
@@ -74,7 +74,7 @@ The result showed that the user **jessie** could run `wget` as root.
 
 `Wget` is an open-source command-line utility used to retrieve content and download files from web servers.
 
-# Root Flag
+## Root Flag
 
 Since `wget` can send HTTP requests, it can be abused to exfiltrate files.
 
@@ -90,7 +90,7 @@ Then, the root flag was sent using:
 
 The root flag was successfully captured.
 
-# Conclusion:
+## Conclusion:
 
 This machine demonstrates how:
 
