@@ -6,7 +6,7 @@ This is an easy Linux machine. The goal is to obtain both the user and root flag
 
 After starting the machine and obtaining its IP address, the first step was to perform a port scan using Nmap:
 
-<img src="assets/nmap-scan.png" width="900">
+<img src="assets/nmap-scan.png" width="700">
 
 The scan revealed that an HTTP service was running, so the next step was to enumerate the web server.
 
@@ -14,10 +14,10 @@ The scan revealed that an HTTP service was running, so the next step was to enum
 
 Accessing the IP in the browser showed the default Apache2 Ubuntu page:
 
-<img src="assets/default-page.png" width="900">
+<img src="assets/default-page.png" width="700">
 
 Although nothing useful appeared at first glance, checking the page source revealed a potential username:
 
 ```Jessie```
 
-<img src="assets/jessie-source.png" width="900">
+<img src="assets/jessie-source.png" width="700">
