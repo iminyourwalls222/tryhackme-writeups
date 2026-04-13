@@ -56,3 +56,8 @@ Using the key, it was possible to log into the system as the user:
 
 <img src="assets/ssh-access.png" width="700">
 
+# User Flag
+
+After gaining access, the user flag was found in the Documents directory:
+
+<img src="assets/user-flag.png" width="700">
