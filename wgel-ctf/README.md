@@ -2,7 +2,7 @@
 
 # Wgel CTF - Write-up
 
-This is an easy Linux machine. The goal is to obtain both the user and root flags.
+This is an easy Linux machine focused on enumeration and privilege escalation. The goal is to obtain both the user and root flags.
 
 ## Initial Recon
 
