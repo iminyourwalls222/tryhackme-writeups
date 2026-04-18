@@ -70,11 +70,13 @@ Checking cron jobs:
 
 <img src="assets/checking-permissions.png" width="700">
 
-We discover a script:
+The cron job reveals that the script `id.sh` is executed as the root user every minute.
 
-```/home/jack/id.sh```
+This is evident from the `/etc/crontab` format, where the user field specifies which user runs the command:
 
-This script runs as root and is writable.
+* * * * * *root* cd /home/jack && bash id.sh
+
+Since the script is located in a writable directory, we can modify it and inject a reverse shell, which will then be executed with root privileges.
 
 ## Exploiting Cron Job
 
