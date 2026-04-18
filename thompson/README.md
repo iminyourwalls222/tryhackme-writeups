@@ -74,7 +74,7 @@ The cron job reveals that the script `id.sh` is executed as the root user every 
 
 This is evident from the `/etc/crontab` format, where the user field specifies which user runs the command:
 
-* * * * * *root* cd /home/jack && bash id.sh
+\* \* \* \* \* *root* cd /home/jack && bash id.sh
 
 Since the script is located in a writable directory, we can modify it and inject a reverse shell, which will then be executed with root privileges.
 
