@@ -2,7 +2,7 @@
 
 # Thompson CTF - Write-up
 
-This machine focuses on web exploitation through Apache Tomcat, followed by privilege escalation via a misconfigured cron job. The goal is to obtain both user and root flags.
+This machine focuses on web exploitation through Apache Tomcat, followed by privilege escalation via a misconfigured cron job. The goal is to obtain both the user and root flags.
 
 ## Reconnaissance
 
