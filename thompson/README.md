@@ -1,4 +1,4 @@
-<img src="assets/thompson-logo.png" width="400">
+<img src="assets/thompson-logo.png" width="300">
 
 # Thompson CTF - Write-up
 
