@@ -26,7 +26,7 @@ The second task involved an image file. Instead of looking at the image visually
 
 Using:
 
-```exiftool image.jpg```
+```exiftool findme.jpg```
 
 I was able to extract metadata fields, where the flag was embedded.
 
