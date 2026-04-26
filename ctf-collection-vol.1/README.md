@@ -38,7 +38,7 @@ This task suggested hidden data inside an image, likely using steganography.
 
 I used:
 
-```steghide extract -sf image.jpg```
+```steghide extract -sf extinction.jpg```
 
 In this case, no passphrase was required (simply pressing Enter). In harder challenges, the passphrase would need to be identified through further enumeration or analysis.
 
