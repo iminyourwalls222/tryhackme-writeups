@@ -113,7 +113,7 @@ This task required inspecting the HTML source of the TryHackMe page itself.
 
 By right-clicking → Inspect i found the flag hidden in the HTML.
 
-<img src="assets/task-htmlinspection.png" width="700">
+<img src="assets/task9-htmlinspection.png" width="700">
 
 # Task 10 – Corrupted PNG File
 
