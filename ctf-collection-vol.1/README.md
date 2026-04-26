@@ -123,6 +123,8 @@ The file appeared to be a PNG, but running:
 
 showed it as generic “data”, indicating that the header was likely corrupted.
 
+<img src="assets/task10-file.png" width="700">
+
 Since PNG files have a well-known magic number, I opened the file in a hex editor and corrected the header to the proper signature.
 
 <img src="assets/task10-hexeditor.png" width="700">
@@ -130,3 +132,4 @@ Since PNG files have a well-known magic number, I opened the file in a hex edito
 After fixing the header, the file was properly recognized and could be opened normally.
 
 <img src="assets/task10-flag.png" width="700">
+
