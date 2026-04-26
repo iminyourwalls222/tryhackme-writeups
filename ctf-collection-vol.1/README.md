@@ -133,3 +133,54 @@ After fixing the header, the file was properly recognized and could be opened no
 
 <img src="assets/task10-flag.png" width="700">
 
+# Task 11 – Google Dorking
+
+This task involved using a Google dork. Based on the hint, the search was specifically focused on Reddit:
+
+```site:reddit.com intext:"THM"```
+
+The goal was to find indexed Reddit posts containing the flag.
+
+However, in this case, the original post had been deleted, meaning the flag was no longer directly accessible.
+
+Instead of stopping there, a better approach would be:
+
++ Try using the [Wayback Machine](https://web.archive.org/) to check archived versions of the page
++ Look for cached results in Google
++ Search for alternative write-ups to confirm the expected solution
+
+In this case, I used the Wayback Machine to access an archived version of the post, where the flag was still available.
+
+<img src="assets/task11-waybacktrick.png" width="700">
+
+# Task 12 – Brainfuck Decoding
+
+The hint explicitly mentioned Brainfuck, which is an esoteric programming language.
+
+The provided code can be decoded using tools like:
+
++ Online decoders (e.g., dcode)
++ Scripts or interpreters
+
+After decoding, the output revealed the flag.
+
+<img src="assets/task12-brainfkdecode.png" width="700">
+
+# Task 13 – XOR Decoding
+
+This task involved two encoded strings that needed to be XORed together.
+
+At first glance, the second value looked like binary due to its pattern (1010...). 
+
+However, it was actually intended to be interpreted as hexadecimal, which is why treating both inputs as hex produced the correct result.
+
+To solve this, I XORed the two values.
+
+One way to do this was using Python:
+
+<img src="assets/task13-usingpython.png" width="700">
+
+Alternatively, I used an online XOR calculator by setting both inputs to hexadecimal, which directly revealed the flag.
+
+<img src="assets/task13-usingxorcalculator.png" width="700">
+
