@@ -30,7 +30,7 @@ Using:
 
 I was able to extract metadata fields, where the flag was embedded.
 
-<img src="assets/task2-metadata" width="700">
+<img src="assets/task2-metadata.png" width="700">
 
 # Task 3 – Steganography
 
