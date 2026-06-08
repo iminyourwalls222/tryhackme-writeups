@@ -114,7 +114,7 @@ While reviewing the website's content, I noticed multiple references to a hiring
 
 This included phrases such as:
 
-Hiring Drive\n
+Hiring Drive \
 Spring 2026
 
 <img src="assets/website-enumeration.png" width="700">
@@ -141,7 +141,7 @@ Finally, I used Hydra to perform an SSH brute-force attack against the `jford` a
 
 The attack successfully recovered the password:
 
-Username: jford\n 
+Username: jford \
 Password: spring2026!
 
 ## User Flag
