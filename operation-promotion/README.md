@@ -94,8 +94,6 @@ Because the command was delivered through the host GET parameter, URL encoding w
 
 This payload successfully connected back to my Netcat listener, providing an interactive shell as www-data.
 
-<img src="assets/nc-lvnp.png" width="700">
-
 <img src="assets/wwwdata-shell.png" width="700">
 
 ## Local Enumeration
