@@ -131,7 +131,7 @@ I then used Hashcat's `dive.rule` to generate password variations:
 
 ```hashcat --stdout placeholder.txt -r /usr/share/hashcat/rules/dive.rule > wordlist.txt```
 
-<img src="assets/contextbasedwl.png" width="700">
+<img src="assets/context-basedwl.png" width="700">
 
 Finally, I used Hydra to perform an SSH brute-force attack against the `jford` account:
 
