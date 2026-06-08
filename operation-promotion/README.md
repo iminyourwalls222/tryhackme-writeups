@@ -90,6 +90,8 @@ I then switched to an alternative Bash reverse shell payload:
 
 <img src="assets/url-payload.png" width="700">
 
+Because the command was delivered through the host GET parameter, URL encoding was required. Spaces were replaced with `+` and special characters such as `&` were encoded as `%26` to ensure the payload reached the underlying shell exactly as intended.
+
 This payload successfully connected back to my Netcat listener, providing an interactive shell as www-data.
 
 <img src="assets/nc-lvnp.png" width="700">
